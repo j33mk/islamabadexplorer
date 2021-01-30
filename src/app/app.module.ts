@@ -3,14 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MainBannerComponent } from './main-banner/main-banner.component';
+import { ParksComponent } from './parks/parks.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { AcademicsComponent } from './academics/academics.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainBannerComponent,
+    ParksComponent,
+    RestaurantsComponent,
+    AcademicsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
