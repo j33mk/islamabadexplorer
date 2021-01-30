@@ -10,6 +10,8 @@ import { ParksComponent } from './parks/parks.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { AcademicsComponent } from './academics/academics.component';
 
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,7 @@ import { AcademicsComponent } from './academics/academics.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,3 +8,8 @@ background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, F
 a{
     font-weight:500;
 }
+
+.special_a{
+    background-color: dimgrey;
+    border-radius: 1rem;
+}

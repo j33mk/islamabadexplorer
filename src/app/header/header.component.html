@@ -1,17 +1,37 @@
-<nav class="navbar navbar-expand-sm bg-danger navbar-dark headerspecial">
+<nav class="navbar navbar-expand-lg navbar-light navbar-dark headerspecial">
+  <a href="">
+    <img src="assets/logos/failmsjd.png" style="width: 50px;height:50px;margin-right: 10px;">
+  </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <img width="5%" height="5%" src="assets/logos/failmsjd.png" style="margin-right: 10px;">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" routerLink="restaurants" [routerLinkActive]="['special_a']">Restaurants</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" routerLink="restaurants">Restaurants</a>
+        <a class="nav-link" routerLink="academics" [routerLinkActive]="['special_a']">Academics</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" routerLink="academics">Academics</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="parks">Parks</a>
+        <a class="nav-link" routerLink="parks" [routerLinkActive]="['special_a']">Parks</a>
       </li>
     </ul>
-  </nav>
+  </div>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-sm bg-danger navbar-dark headerspecial">
+    <ul class="navbar-nav">
+      <a href="">
+        <img src="assets/logos/failmsjd.png" style="width: 50px;height:50px;margin-right: 10px;">
+      </a>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="restaurants" [routerLinkActive]="['special_a']">Restaurants</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="academics" [routerLinkActive]="['special_a']">Academics</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="parks" [routerLinkActive]="['special_a']">Parks</a>
+      </li>
+    </ul>
+  </nav> -->

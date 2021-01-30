@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {IsloserviceService} from '../isloservice.service'
 
 @Component({
   selector: 'app-restaurants',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantsComponent implements OnInit {
 
-  constructor() { }
-
+  data:any = null;
+  constructor(private httpService:IsloserviceService) { 
+    this.data = httpService.getRestuarunts();
+  }
   ngOnInit(): void {
   }
 
